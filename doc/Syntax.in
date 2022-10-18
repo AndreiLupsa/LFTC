@@ -12,8 +12,6 @@ III. Syntax:
 
 	<condition> ::= <exp> | <exp> <operator> <exp> | ( <condition> ) <operator> ( <condition> )
 
-	<operator> ::= + | - | * | / | < | > | = | == | != | <= | => | or | and
-
 	<symbol> ::= <identifier> | <constant>
 
 	<whilestmt> ::= & ( <condition> ) { <compstmt> }
