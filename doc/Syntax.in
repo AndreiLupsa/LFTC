@@ -18,7 +18,7 @@ III. Syntax:
 
 	<instmt> ::= read ( <identifier> )
 
-	<outstmt> ::= write ( <symbol> )
+	<outstmt> ::= write ( <exp> )
 
 	<assignstmt> ::= <identifier> = <exp>
 
