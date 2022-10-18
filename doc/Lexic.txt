@@ -13,7 +13,7 @@ I. Lexic
 	
 	2. <separator> ::= ( | ) | [ | ] | { | } | : | ; | , | . | space | tab | newline
 
-	3. <res_word> ::= START | END | read | write | Integer | Char | String | Boolean | ? | ! | &
+	3. <res_word> ::= START | END | read | write | Array | Integer | Char | String | Boolean | true | false | ? | ! | &
 
 
 	c. Identifiers: 

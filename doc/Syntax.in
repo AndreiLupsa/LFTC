@@ -2,8 +2,7 @@ III. Syntax:
 
 	<program> ::= START <compstmt> END
 
-	<compstmt> ::= <stmt> | <stmt> <compstmt> 
-
+	<compstmt> ::= <stmt> | <stmt> <compstmt>
 	<stmt> ::= <declstmt> ; | <assignstmt> ; | <execstmt> ;
 
 	<execstmt> ::= <ifstmt> | <whilestmt> | <instmt> | <outstmt>
@@ -28,8 +27,14 @@ III. Syntax:
 
 	<factor> ::= ( <exp> ) | <symbol>
 
-	<declstmt> ::= <type> <identifier> | <type> <assignstmt>
+	<declstmt> ::= <type> <identifier> | <type> <assignstmt> | <arraydecl>
 
-	<type> ::= Integer | Boolean | Char | String 
+	<type> ::= Integer | Boolean | Char | String
+
+	<arraydecl> ::= Array <type> [ <nonzeroseq> ] 
+
+	<nonzeroseq> ::= <nonzero> | <nonzero> <nonzeroseq>
+
+	 
 
 	
