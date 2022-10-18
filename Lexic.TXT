@@ -11,18 +11,18 @@ I. Lexic
 
 	b. Special symbols:
 
-	1. operators: + - * / < > = == <= => or and
+	1. operators: + - * / < > = == != <= => or and
 	
 	2. separators: ( ) [ ] { } : ; , . space
 
-	3. Reserved words: ? ! START END read write Integer Char String Boolean
+	3. Reserved words: START END read write Integer Char String Boolean ? ! &
 
 
 	c. Identifiers: 
 
-	<identifier> ::= <letter> | <letter> <letdig_seq>
+	1. <identifier> ::= <letter> | <letter> <letdig_seq>
 
-	<letter> ::= a | b | ... | z | A | B | ... | Z
+	<letter> ::= a | b | ... | z | A | B | ... | Z | _
 
 	<letdig_seq> ::= <letdig> | <letdig>  <letdig_seq>
 

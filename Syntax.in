@@ -4,25 +4,31 @@ III. Syntax:
 
 	<compstmt> ::= <stmt> | <stmt> <compstmt> 
 
-	<stmt> ::= <declstmt> ; | <assignstmt> ; | <execstmt>
+	<stmt> ::= <declstmt> ; | <assignstmt> ; | <execstmt> ;
 
-	<execstmt> ::= <ifstmt> | <whilestmt>
+	<execstmt> ::= <ifstmt> | <whilestmt> | <instmt> | <outstmt>
 
 	<ifstmt> ::= ? ( <condition> ) { <compstmt> } | ? ( <condition> ) { <compstmt> } ! { <compstmt> }
 
-	<condition> ::= <symbol> | <symbol> <operator> <condition>
+	<condition> ::= <exp> | <exp> <operator> <exp> | ( <condition> ) <operator> ( <condition> )
+
+	<operator> ::= + | - | * | / | < | > | = | == | != | <= | => | or | and
 
 	<symbol> ::= <identifier> | <constant>
 
 	<whilestmt> ::= & ( <condition> ) { <compstmt> }
 
+	<instmt> ::= read ( <identifier> )
+
+	<outstmt> ::= write ( <symbol> )
+
 	<assignstmt> ::= <identifier> = <exp>
 
-	<exp> ::= <exp> + <term> | <exp> - <term> | <term>
+	<exp> ::= <term> | <exp> + <term> | <exp> - <term>
 
-	<term> ::= <term> * <factor> | <term> / <factor> | <factor>
+	<term> ::=  <factor> | <term> * <factor> | <term> / <factor>
 
-	<factor> ::= ( <exp> ) | <token>
+	<factor> ::= ( <exp> ) | <symbol>
 
 	<declstmt> ::= <type> <identifier> | <type> <assignstmt>
 
