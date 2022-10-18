@@ -1,0 +1,49 @@
+I. Lexic
+
+	a. Alphabet
+
+	1. Upper (A-Z) and lower case letters (a-z) of the English alphabet
+
+	2. Underline character '_';
+
+	3. Decimal digits (0-9);
+
+
+	b. Special symbols:
+
+	1. operators: + - * / < > = == != <= => or and
+	
+	2. separators: ( ) [ ] { } : ; , . space
+
+	3. Reserved words: START END read write Integer Char String Boolean ? ! &
+
+
+	c. Identifiers: 
+
+	1. <identifier> ::= <letter> | <letter> <letdig_seq>
+
+	<letter> ::= a | b | ... | z | A | B | ... | Z | _
+
+	<letdig_seq> ::= <letdig> | <letdig>  <letdig_seq>
+
+	<letdig> ::= <letter> | <digit>
+	
+	<digit> ::= 0 | 1 | ... | 9
+
+
+	d. Constants:
+
+	1. <constant> ::= <integer> | <character> | <string>
+
+	2. <integer> ::= 0 | + <nonzero> | - <nonzero> | <nonzero> |
+			 + <nonzero> <digitseq> | - <nonzero> <digitseq> | <nonzero> <digitseq> 
+
+	   <nonzero> ::= 1 | 2 | ... | 9
+	
+  	   <digitseq> ::= <digit> | <digit> <digitseq> 
+
+	3. <character> ::= ' <letdig> '
+
+	4. <string> ::= " <letdig_seq> "
+
+
