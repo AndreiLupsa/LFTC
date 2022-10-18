@@ -1,0 +1,31 @@
+III. Syntax:
+
+	<program> ::= START <compstmt> END
+
+	<compstmt> ::= <stmt> | <stmt> <compstmt> 
+
+	<stmt> ::= <declstmt> ; | <assignstmt> ; | <execstmt>
+
+	<execstmt> ::= <ifstmt> | <whilestmt>
+
+	<ifstmt> ::= ? ( <condition> ) { <compstmt> } | ? ( <condition> ) { <compstmt> } ! { <compstmt> }
+
+	<condition> ::= <symbol> | <symbol> <operator> <condition>
+
+	<symbol> ::= <identifier> | <constant>
+
+	<whilestmt> ::= & ( <condition> ) { <compstmt> }
+
+	<assignstmt> ::= <identifier> = <exp>
+
+	<exp> ::= <exp> + <term> | <exp> - <term> | <term>
+
+	<term> ::= <term> * <factor> | <term> / <factor> | <factor>
+
+	<factor> ::= ( <exp> ) | <token>
+
+	<declstmt> ::= <type> <identifier> | <type> <assignstmt>
+
+	<type> ::= Integer | Boolean | Char | String 
+
+	
