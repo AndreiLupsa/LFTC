@@ -44,6 +44,6 @@ I. Lexic
 
 	3. <character> ::= ' <letdig> '
 
-	4. <string> ::= " <letdig_seq> "
+
 
 
