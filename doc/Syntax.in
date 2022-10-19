@@ -31,9 +31,12 @@ III. Syntax:
 
 	<type> ::= Integer | Boolean | Char | String
 
-	<arraydecl> ::= Array <type> [ <nonzeroseq> ] 
+	<arraydecl> ::= Array <type> <identifier> [ <nonzeroseq> ] | 
+			Array <type> <identifier> [ <nonzeroseq> ] = { <arraycontent> }
 
 	<nonzeroseq> ::= <nonzero> | <nonzero> <nonzeroseq>
+
+	<arraycontent> ::= <exp> | <exp> , <arraycontent>
 
 	 
 
