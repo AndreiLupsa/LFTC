@@ -1,0 +1,43 @@
+I. Lexic
+
+	a. Alphabet
+
+	1. <letter> ::= a | b | ... | z | A | B | ... | Z | _
+
+	2. <digit> ::= 0 | 1 | ... | 9
+
+
+	b. Special symbols:
+
+	1. <operator> ::= + | - | * | / | < | > | = | == | != | <= | => | or | and
+	
+	2. <separator> ::= ( | ) | [ | ] | { | } | : | ; | , | . | space | tab | newline
+
+	3. <res_word> ::= START | END | read | write | Array | Integer | Char | String | Boolean | true | false | ? | ! | &
+
+
+	c. Identifiers: 
+
+	1. <identifier> ::= <letter> | <letter> <letdig_seq>
+	
+	<letdig_seq> ::= <letdig> | <letdig> <letdig_seq>
+
+	<letdig> ::= <letter> | <digit>
+
+
+	d. Constants:
+
+	1. <constant> ::= <integer> | <character> | <string>
+
+	2. <integer> ::= 0 | + <nonzero> | - <nonzero> | <nonzero> |
+			 + <nonzero> <digitseq> | - <nonzero> <digitseq> | <nonzero> <digitseq> 
+
+	   <nonzero> ::= 1 | 2 | ... | 9
+	
+  	   <digitseq> ::= <digit> | <digit> <digitseq> 
+
+	3. <character> ::= ' <letdig> '
+
+	4. <string> ::= " <letdig_seq> "
+
+
