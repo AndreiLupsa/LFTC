@@ -1,0 +1,89 @@
+p1 - max of 3 numbers
+
+START
+
+Integer a;
+Integer b;
+Integer c;
+Integer max = 0;
+Integer min = int_max;
+
+?(a>b){
+	max = a;
+}
+!{
+	max = b;
+}
+?(c>max){
+	max = c;
+}
+
+END
+
+p1err
+
+START
+
+Integer a;
+Integer b;
+Integer c;
+Integer max = 0;
+Integer min = INT_MAX;
+
+?(a > b){
+	max = a;
+}
+!{
+	max = b;
+	~
+}
+?(2c > max){
+	max = c;
+}
+
+END
+
+p2 - verify if a number is prime
+
+START
+
+Integer a;
+Boolean prime = 1;
+Integer i = 2;
+
+&(i < a/2){
+	?(a % i == 0){
+		prime = 0;
+		EXIT;
+	}
+	i++;
+}
+
+?(prime){
+	write("Prime");
+}!{
+	write("Not_Prime");
+}
+
+END
+
+p3 - compute the sum of n numbers
+
+START
+
+Integer sum = 0;
+Integer n = 10;
+Integer arr[n];
+Integer i = 0;
+
+&(i < n){
+	arr[i] = i*3 + (n/i)*2;
+	i++;
+}
+&(i < n){
+	sum = sum + arr[i];
+	i++;
+}
+write(sum);
+
+END

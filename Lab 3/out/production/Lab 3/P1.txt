@@ -1,0 +1,19 @@
+START
+
+Integer a;
+Integer b;
+Integer c;
+Integer max = 0;
+Integer min = int_max;
+
+?(a>b){
+	max = a;
+}
+!{
+	max = b;
+}
+?(c>max){
+	max = c;
+}
+
+END

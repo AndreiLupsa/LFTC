@@ -1,0 +1,21 @@
+START
+
+Integer a;
+Boolean prime = 1;
+Integer i = 2;
+
+&(i < a/2){
+	?(a % i == 0){
+		prime = 0;
+		EXIT;
+	}
+	i++;
+}
+
+?(prime){
+	write("Prime");
+}!{
+	write("Not_Prime");
+}
+
+END
