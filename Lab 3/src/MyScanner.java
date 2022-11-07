@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class MyScanner {
     private final ArrayList<String> OPERATORS = new ArrayList<>(
-            List.of("+", "-", "*", "/", "<", ">", "=", "==", "<=", "=>", "not", "or", "and"));
+            List.of("+", "-", "*", "/", "<", ">", "=", "==", "<=", "=>", "!", "/", "&"));
     private final ArrayList<String> SEPARATORS = new ArrayList<>(
             List.of("(", ")", "[", "]", "{", "}", ":", ";", ",", ".", " ", "    ", "\n"));
     private final ArrayList<String> RESERVED_WORDS = new ArrayList<>(
-            List.of("START", "END", "read", "write", "Array", "Integer", "Char", "String", "Boolean", "true", "false", "?", "!", "&"));
+            List.of("START", "END", "read", "write", "Array", "Integer", "Char", "String", "Boolean", "true", "false", "if", "else", "loop"));
     private final SymbolTable STi;
     private final SymbolTable STc;
     private final String programFilePath;

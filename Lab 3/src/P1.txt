@@ -6,13 +6,13 @@ Integer c;
 Integer max = 0;
 Integer min = int_max;
 
-?(a>b){
+if(a>b){
 	max = a;
 }
-!{
+else{
 	max = b;
 }
-?(c>max){
+if(c>max){
 	max = c;
 }
 

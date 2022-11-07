@@ -5,11 +5,11 @@ Integer n = 10;
 Integer arr[n];
 Integer i = 0;
 
-&(i < n){
+loop(i < n){
 	arr[i] = i*3 + (n/i)*2;
 	i++;
 }
-&(i < n){
+loop(i < n){
 	sum = sum + arr[i];
 	i++;
 }
