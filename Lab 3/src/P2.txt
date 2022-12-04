@@ -5,7 +5,7 @@ Boolean prime = 1;
 Integer i = 2;
 
 loop(i < a/2){
-	?(a % i == 0){
+	if(a % i == 0){
 		prime = 0;
 		EXIT;
 	}

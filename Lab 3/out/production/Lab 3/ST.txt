@@ -1,0 +1,5 @@
+Identifier Symbol Table:
+[a, b, c, max, min, int_max, null, null]
+
+Constant Symbol Table:
+[0]

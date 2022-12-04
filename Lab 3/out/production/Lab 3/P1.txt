@@ -6,7 +6,7 @@ Integer c;
 Integer max = 0;
 Integer min = int_max;
 
-if(a>b){
+if(a > b){
 	max = a;
 }
 else{
