@@ -6,9 +6,9 @@ public class LangSpec {
     private final ArrayList<String> OPERATORS = new ArrayList<>(
             List.of("+", "-", "*", "/", "%", "<", ">", "<=", ">=", "=", "==", "!=", "not"));
     private final ArrayList<String> SEPARATORS = new ArrayList<>(
-            List.of("(", ")", "[", "]", "{", "}", ":", ";", ",", ".", " ", "    ", "\t","\n"));
+            List.of("(", ")", "[", "]", "{", "}", ":", ";", ",", ".", " ", "\t","\n"));
     private final ArrayList<String> RESERVED_WORDS = new ArrayList<>(
-            List.of("START", "END", "read", "write", "Array", "Integer", "Char", "String", "Boolean", "true", "false", "if", "else", "loop"));
+            List.of("START", "END", "EXIT", "read", "write", "Array", "Integer", "Char", "String", "Boolean", "true", "false", "if", "else", "loop"));
 
     private final HashMap<String, String> codif = new HashMap<>();
 
@@ -20,21 +20,16 @@ public class LangSpec {
         codif.put("identifier", "identifier");
         codif.put("constant", "constant");
 
-        int c = 2;
-
         for (String o : OPERATORS) {
             codif.put(o, o);
-            c++;
         }
 
         for (String s : SEPARATORS) {
             codif.put(s, s);
-            c++;
         }
 
         for (String rw : RESERVED_WORDS) {
             codif.put(rw, rw);
-            c++;
         }
     }
     public boolean isOperator(String token) {

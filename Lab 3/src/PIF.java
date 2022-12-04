@@ -13,8 +13,7 @@ public class PIF {
     public String toString() {
         StringBuilder result = new StringBuilder();
         for (Pair<String, Integer> pair : pif) {
-            //result.append(pair.getKey()).append(": (").append(pair.getValue().getKey()).append(", ").append(pair.getValue().getValue()).append(")\n");
-            result.append(pair.getKey()).append("(").append(pair.getValue()).append(")\n");
+            result.append(pair.getKey()).append(" (").append(pair.getValue()).append(")\n");
         }
         return result.toString();
     }

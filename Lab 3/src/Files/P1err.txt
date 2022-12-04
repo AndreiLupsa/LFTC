@@ -4,17 +4,17 @@ Integer a;
 Integer b;
 Integer c;
 Integer max = 0;
-Integer min = INT_MAX;
+Integer min = int_max;
 
 if(a > b){
-	max = a;
+    max = a;
 }
 else{
-	max = b;
-	~
+    max = b;
+    ~
 }
 if(2c > max){
-	max = c;
+    max = c;
 }
 
 END
