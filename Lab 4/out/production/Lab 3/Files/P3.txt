@@ -1,0 +1,18 @@
+START
+
+Integer sum = 0;
+Integer n = 10;
+Integer arr[n];
+Integer i = 0;
+
+loop(i < n){
+    arr[i] = i*3 + (n/i)*2;
+    i++;
+}
+loop(i < n){
+    sum = sum + arr[i];
+    i++;
+}
+write(sum);
+
+END

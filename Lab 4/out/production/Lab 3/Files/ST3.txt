@@ -1,0 +1,5 @@
+Identifier Symbol Table:
+[sum, n, arr, i]
+
+Constant Symbol Table:
+[0, 10, 3, 2]
