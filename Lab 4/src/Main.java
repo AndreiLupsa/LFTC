@@ -3,13 +3,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        p 0 p
-//        p 0 q
-//        p 1 q
-//        q 0 p
-//        q 1 r
-//        r 0 p
-//        r 1 r
         System.out.println("1. FA");
         System.out.println("2. Scanner");
         System.out.println("Command: ");
@@ -51,17 +44,17 @@ public class Main {
                 case 5 -> System.out.println(fa.getTransitions());
                 case 6 -> {
                     if(fa.checkIfDFA()) {
-                        System.out.println("Your sequence: ");
+                        System.out.println("Sequence: ");
                         Scanner reader2 = new Scanner(System.in);
                         String sequence = reader2.next();
 
                         if (fa.checkSequence(sequence))
-                            System.out.println("Sequence is valid");
+                            System.out.println("Valid");
                         else
-                            System.out.println("Invalid sequence");
+                            System.out.println("Invalid");
                     }
                     else {
-                        System.out.println("FA is not deterministic.");
+                        System.out.println("not DFA.");
                     }
                 }
             }
