@@ -1,4 +1,11 @@
 START
+{
+}
+]
+[
+;
+.
+constant (0)
 Integer
 identifier (0)
 ;
@@ -11,7 +18,7 @@ identifier (2)
 Integer
 identifier (3)
 =
-constant (0)
+constant (1)
 ;
 Integer
 identifier (4)

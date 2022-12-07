@@ -61,15 +61,15 @@ public class MyScanner {
                 tokens.add(constant);
                 i += constant.length() - 1;
             } else if (line.charAt(i) == '-') {
-                String token = identifyMinusToken(line, i, tokens);
+                String token = checkMinusToken(line, i, tokens);
                 tokens.add(token);
                 i += token.length() - 1;
             } else if (line.charAt(i) == '+') {
-                String token = identifyPlusToken(line, i, tokens);
+                String token = checkPlusToken(line, i, tokens);
                 tokens.add(token);
                 i += token.length() - 1;
             } else if (ls.isPartOfOperator(line.charAt(i))) {
-                String operator = identifyOp(line, i);
+                String operator = identifyOperator(line, i);
                 tokens.add(operator);
                 i += operator.length() - 1;
             } else if (line.charAt(i) != ' ') {
@@ -82,75 +82,57 @@ public class MyScanner {
     }
 
     public String identifyStringConst(String line, int position) {
-        StringBuilder constant = new StringBuilder();
-
-        for (int i = position; i < line.length(); ++i) {
-            if ((ls.isSeparator(String.valueOf(line.charAt(i))) || ls.isOperator(String.valueOf(line.charAt(i)))) && ((i == line.length() - 2 && line.charAt(i + 1) != '\"') || (i == line.length() - 1)))
-                break;
-            constant.append(line.charAt(i));
+        StringBuilder str = new StringBuilder();
+        for (int i = position; i < line.length(); i++) {
+            str.append(line.charAt(i));
             if (line.charAt(i) == '\"' && i != position)
                 break;
         }
-
-        return constant.toString();
+        return str.toString();
     }
 
     public String identifyCharConst(String line, int position) {
-        StringBuilder constant = new StringBuilder();
-
-        for (int i = position; i < line.length(); ++i) {
-            if ((ls.isSeparator(String.valueOf(line.charAt(i))) || ls.isOperator(String.valueOf(line.charAt(i)))) && ((i == line.length() - 2 && line.charAt(i + 1) != '\'') || (i == line.length() - 1)))
-                break;
-            constant.append(line.charAt(i));
+        StringBuilder ch = new StringBuilder();
+        for (int i = position; i < line.length(); i++) {
+            ch.append(line.charAt(i));
             if (line.charAt(i) == '\'' && i != position)
                 break;
         }
-
-        return constant.toString();
+        return ch.toString();
     }
 
-    public String identifyMinusToken(String line, int position, ArrayList<String> tokens) {
-        //minus is preceded by an identifier, constant -> minus is an operator
+    public String checkMinusToken(String line, int position, ArrayList<String> tokens) {
         if (ls.isIdentifier(tokens.get(tokens.size() - 1)) || ls.isConstant(tokens.get(tokens.size() - 1))) {
             return "-";
         }
 
-        //minus is preceded by operator or separator -> assign a negative number or condition with negative number -> minus belongs to a numeric constant
         StringBuilder token = new StringBuilder();
         token.append('-');
-
         for (int i = position + 1; i < line.length() && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '.'); ++i) {
             token.append(line.charAt(i));
         }
-
         return token.toString();
     }
 
-    public String identifyPlusToken(String line, int position, ArrayList<String> tokens) {
-        //plus is preceded by an identifier, constant -> plus is an operator
+    public String checkPlusToken(String line, int position, ArrayList<String> tokens) {
         if (ls.isIdentifier(tokens.get(tokens.size() - 1)) || ls.isConstant(tokens.get(tokens.size() - 1))) {
             return "+";
         }
 
-        //plus is preceded by operator or separator -> assign a positive number or condition with positive number -> plus belongs to a numeric constant
         StringBuilder token = new StringBuilder();
         token.append('+');
-
         for (int i = position + 1; i < line.length() && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '.'); ++i) {
             token.append(line.charAt(i));
         }
-
         return token.toString();
     }
 
-    public String identifyOp(String line, int position) {
+    public String identifyOperator(String line, int position) {
         StringBuilder operator = new StringBuilder();
         operator.append(line.charAt(position));
         operator.append(line.charAt(position + 1));
-
         if (ls.isOperator(operator.toString()))
             return operator.toString();
-
         return String.valueOf(line.charAt(position));
     }
 
@@ -174,8 +156,7 @@ public class MyScanner {
             String token = tokenPair.getKey();
 
             if (ls.isOperator(token) || ls.isReservedWord(token) || ls.isSeparator(token)) {
-                String code = ls.getCode(token);
-                pif.add(code, -1);
+                pif.add(token, -1);
             } else if (ls.isIdentifier(token)) {
                 STi.add(token);
                 int position = STi.getPosition(token);

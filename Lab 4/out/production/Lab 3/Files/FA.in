@@ -7,4 +7,4 @@ p 1 q
 q 0 p
 q 1 r
 r 0 p
-r 1 r
+r 1 q
