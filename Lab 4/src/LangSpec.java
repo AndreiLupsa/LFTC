@@ -4,32 +4,32 @@ import java.util.List;
 
 public class LangSpec {
     private final ArrayList<String> OPERATORS = new ArrayList<>(
-            List.of("+", "-", "*", "/", "%", "<", ">", "<=", ">=", "=", "==", "!=", "not"));
+            List.of("+", "-", "*", "/", "%", "<", ">", "<=", ">=", "=", "==", "not"));
     private final ArrayList<String> SEPARATORS = new ArrayList<>(
             List.of("(", ")", "[", "]", "{", "}", ":", ";", ",", ".", " ", "\t","\n"));
     private final ArrayList<String> RESERVED_WORDS = new ArrayList<>(
             List.of("START", "END", "EXIT", "read", "write", "Array", "Integer", "Char", "String", "Boolean", "true", "false", "if", "else", "loop"));
 
-    private final HashMap<String, String> codif = new HashMap<>();
+    private final HashMap<String, String> codes = new HashMap<>();
 
     public LangSpec() {
-        createCodification();
+        createCodes();
     }
 
-    private void createCodification() {
-        codif.put("identifier", "identifier");
-        codif.put("constant", "constant");
+    private void createCodes() {
+        codes.put("identifier", "identifier");
+        codes.put("constant", "constant");
 
         for (String o : OPERATORS) {
-            codif.put(o, o);
+            codes.put(o, o);
         }
 
         for (String s : SEPARATORS) {
-            codif.put(s, s);
+            codes.put(s, s);
         }
 
         for (String rw : RESERVED_WORDS) {
-            codif.put(rw, rw);
+            codes.put(rw, rw);
         }
     }
     public boolean isOperator(String token) {
@@ -37,15 +37,17 @@ public class LangSpec {
     }
 
     public boolean isPartOfOperator(char op) {
-        return op == '!' || isOperator(String.valueOf(op));
+        return isOperator(String.valueOf(op));
     }
 
     public boolean isSeparator(String token) {
         return SEPARATORS.contains(token);
     }
+
     public boolean isReservedWord(String token) {
         return RESERVED_WORDS.contains(token);
     }
+
     public boolean isIdentifier(String token) {
         String pattern = "^[a-zA-Z]([a-z|A-Z|0-9|_])*$";
         return token.matches(pattern);
@@ -60,6 +62,6 @@ public class LangSpec {
     }
 
     public String getCode(String token) {
-        return codif.get(token);
+        return codes.get(token);
     }
 }

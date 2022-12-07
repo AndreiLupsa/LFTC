@@ -13,7 +13,9 @@ public class PIF {
     public String toString() {
         StringBuilder result = new StringBuilder();
         for (Pair<String, Integer> pair : pif) {
-            result.append(pair.getKey()).append(" (").append(pair.getValue()).append(")\n");
+            result.append(pair.getKey());
+            if(pair.getValue() != -1) result.append(" (").append(pair.getValue()).append(")");
+            result.append("\n");
         }
         return result.toString();
     }

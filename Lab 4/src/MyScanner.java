@@ -53,11 +53,11 @@ public class MyScanner {
             if (ls.isSeparator(String.valueOf(line.charAt(i))) && !(String.valueOf(line.charAt(i))).equals(" ")) {
                 tokens.add(String.valueOf(line.charAt(i)));
             } else if (line.charAt(i) == '\"') {
-                String constant = identifyStringConstant(line, i);
+                String constant = identifyStringConst(line, i);
                 tokens.add(constant);
                 i += constant.length() - 1;
             } else if (line.charAt(i) == '\'') {
-                String constant = identifyCharConstant(line, i);
+                String constant = identifyCharConst(line, i);
                 tokens.add(constant);
                 i += constant.length() - 1;
             } else if (line.charAt(i) == '-') {
@@ -69,7 +69,7 @@ public class MyScanner {
                 tokens.add(token);
                 i += token.length() - 1;
             } else if (ls.isPartOfOperator(line.charAt(i))) {
-                String operator = identifyOperator(line, i);
+                String operator = identifyOp(line, i);
                 tokens.add(operator);
                 i += operator.length() - 1;
             } else if (line.charAt(i) != ' ') {
@@ -81,7 +81,7 @@ public class MyScanner {
         return tokens;
     }
 
-    public String identifyStringConstant(String line, int position) {
+    public String identifyStringConst(String line, int position) {
         StringBuilder constant = new StringBuilder();
 
         for (int i = position; i < line.length(); ++i) {
@@ -95,7 +95,7 @@ public class MyScanner {
         return constant.toString();
     }
 
-    public String identifyCharConstant(String line, int position) {
+    public String identifyCharConst(String line, int position) {
         StringBuilder constant = new StringBuilder();
 
         for (int i = position; i < line.length(); ++i) {
@@ -143,7 +143,7 @@ public class MyScanner {
         return token.toString();
     }
 
-    public String identifyOperator(String line, int position) {
+    public String identifyOp(String line, int position) {
         StringBuilder operator = new StringBuilder();
         operator.append(line.charAt(position));
         operator.append(line.charAt(position + 1));

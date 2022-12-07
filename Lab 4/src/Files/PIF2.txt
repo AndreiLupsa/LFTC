@@ -1,64 +1,64 @@
-START (-1)
-Integer (-1)
+START
+Integer
 identifier (0)
-; (-1)
-Boolean (-1)
+;
+Boolean
 identifier (1)
-= (-1)
+=
 constant (0)
-; (-1)
-Integer (-1)
+;
+Integer
 identifier (2)
-= (-1)
+=
 constant (1)
-; (-1)
-loop (-1)
-( (-1)
+;
+loop
+(
 identifier (2)
-< (-1)
+<
 identifier (0)
-/ (-1)
+/
 constant (1)
-) (-1)
-{ (-1)
-if (-1)
-( (-1)
+)
+{
+if
+(
 identifier (0)
-% (-1)
+%
 identifier (2)
-== (-1)
+==
 constant (2)
-) (-1)
-{ (-1)
+)
+{
 identifier (1)
-= (-1)
+=
 constant (2)
-; (-1)
-EXIT (-1)
-; (-1)
-} (-1)
+;
+EXIT
+;
+}
 identifier (2)
-+ (-1)
-+ (-1)
-; (-1)
-} (-1)
-if (-1)
-( (-1)
++
++
+;
+}
+if
+(
 identifier (1)
-) (-1)
-{ (-1)
-write (-1)
-( (-1)
+)
+{
+write
+(
 constant (3)
-) (-1)
-; (-1)
-} (-1)
-else (-1)
-{ (-1)
-write (-1)
-( (-1)
+)
+;
+}
+else
+{
+write
+(
 constant (4)
-) (-1)
-; (-1)
-} (-1)
-END (-1)
+)
+;
+}
+END
