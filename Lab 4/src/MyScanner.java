@@ -154,7 +154,6 @@ public class MyScanner {
         boolean isLexicallyCorrect = true;
         for (Pair<String, Integer> tokenPair : tokens) {
             String token = tokenPair.getKey();
-
             if (ls.isOperator(token) || ls.isReservedWord(token) || ls.isSeparator(token)) {
                 pif.add(token, -1);
             } else if (ls.isIdentifier(token)) {
