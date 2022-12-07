@@ -37,17 +37,15 @@ public class FA {
 
                 if(states.contains(transElems[0]) && alphabet.contains(transElems[1]) && states.contains(transElems[2])) {
 
-                    Pair<String, String> trans = new Pair<>(transElems[0], transElems[1]);
-                    System.out.println(trans);
+                    Pair<String, String> transition = new Pair<>(transElems[0], transElems[1]);
 
-                    if (!(transitions.containsKey(trans))) {
+                    if (!(transitions.containsKey(transition))) {
                         Set<String> transitionStatesSet = new HashSet<>();
                         transitionStatesSet.add(transElems[2]);
-                        transitions.put(trans, transitionStatesSet);
-                        System.out.println(transitions);
+                        transitions.put(transition, transitionStatesSet);
                     } else {
                         System.out.println("aaa");
-                        transitions.get(trans).add(transElems[2]);
+                        transitions.get(transition).add(transElems[2]);
                     }
                 }
             }

@@ -1,5 +1,5 @@
 Identifier Symbol Table:
-[a, prime, i, null]
+[a, v, prime, i]
 
 Constant Symbol Table:
 [1, 2, 0, "Prime", "Not_Prime", null, null, null]
