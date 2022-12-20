@@ -1,6 +1,5 @@
 START
-{}][;.
-'a'
+
 Integer a;
 Integer b;
 Integer c;
