@@ -1,0 +1,64 @@
+START
+Integer
+identifier (0)
+;
+Boolean
+identifier (1)
+=
+constant (0)
+;
+Integer
+identifier (2)
+=
+constant (1)
+;
+loop
+(
+identifier (2)
+<
+identifier (0)
+/
+constant (1)
+)
+{
+if
+(
+identifier (0)
+%
+identifier (2)
+==
+constant (2)
+)
+{
+identifier (1)
+=
+constant (2)
+;
+EXIT
+;
+}
+identifier (2)
++
++
+;
+}
+if
+(
+identifier (1)
+)
+{
+write
+(
+constant (3)
+)
+;
+}
+else
+{
+write
+(
+constant (4)
+)
+;
+}
+END

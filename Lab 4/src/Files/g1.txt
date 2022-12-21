@@ -1,0 +1,8 @@
+S A B C
+int + * ( )
+S
+
+S - A B
+A - ( S ) | int C
+B - + S | eps
+C - * A | eps

@@ -1,5 +1,5 @@
 Identifier Symbol Table:
-[a, b, c, max, min, int_max, null, null]
+[sum, n, arr, i]
 
 Constant Symbol Table:
-[0]
+[0, 10, 3, 2]
