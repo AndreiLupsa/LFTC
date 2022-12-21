@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42b9eaa6-9158-4cc9-9147-5ea17301e24d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Files/g1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Files/g2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Grammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner Documentation.DOCX" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner Documentation.DOCX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab 3/Files/FA.in" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab 3/Files/FA.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab 3/Files/P1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab 3/Files/P1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab 3/Files/PIF1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab 3/Files/PIF1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab 3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab 3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Files/P1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Files/P1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Files/PIF1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Files/PIF1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2HDNqCSAJ9pncfpg2IvzSCepvvP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\OneDrive\Documents\GitHub\LFTC\Lab 4\src" />
+      <recent name="C:\Users\andre\OneDrive\Documents\GitHub\LFTC\Lab 3" />
+      <recent name="C:\Users\andre\OneDrive\Documents\GitHub\LFTC\Lab 3\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\OneDrive\Documents\GitHub\LFTC\Lab 4" />
+      <recent name="C:\Users\andre\OneDrive\Documents\GitHub\LFTC\Lab 4\src" />
+      <recent name="C:\Users\andre\OneDrive\Documents\GitHub\LFTC\Lab 3\src\Files" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Lab 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42b9eaa6-9158-4cc9-9147-5ea17301e24d" name="Changes" comment="" />
+      <created>1667815883737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667815883737</updated>
+      <workItem from="1667815885151" duration="1764000" />
+      <workItem from="1667832331642" duration="3150000" />
+      <workItem from="1667981621548" duration="587000" />
+      <workItem from="1668432043233" duration="602000" />
+      <workItem from="1669977094176" duration="9805000" />
+      <workItem from="1670142581445" duration="8235000" />
+      <workItem from="1670230139105" duration="20000" />
+      <workItem from="1670252263124" duration="239000" />
+      <workItem from="1670252648628" duration="50000" />
+      <workItem from="1670252886575" duration="16000" />
+      <workItem from="1670252930033" duration="446000" />
+      <workItem from="1670253722405" duration="2582000" />
+      <workItem from="1670310813868" duration="226000" />
+      <workItem from="1670311061260" duration="829000" />
+      <workItem from="1670340485708" duration="6734000" />
+      <workItem from="1670347510265" duration="6729000" />
+      <workItem from="1670414032026" duration="12392000" />
+      <workItem from="1670427274858" duration="77000" />
+      <workItem from="1670670683097" duration="596000" />
+      <workItem from="1670855525259" duration="317000" />
+      <workItem from="1671016060125" duration="597000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
