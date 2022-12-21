@@ -1,0 +1,78 @@
+START
+Integer
+identifier (0)
+=
+constant (0)
+;
+Integer
+identifier (1)
+=
+constant (1)
+;
+Integer
+identifier (2)
+[
+identifier (1)
+]
+;
+Integer
+identifier (3)
+=
+constant (0)
+;
+loop
+(
+identifier (3)
+<
+identifier (1)
+)
+{
+identifier (2)
+[
+identifier (3)
+]
+=
+identifier (3)
+*
+constant (2)
++
+(
+identifier (1)
+/
+identifier (3)
+)
+*
+constant (3)
+;
+identifier (3)
++
++
+;
+}
+loop
+(
+identifier (3)
+<
+identifier (1)
+)
+{
+identifier (0)
+=
+identifier (0)
++
+identifier (2)
+[
+identifier (3)
+]
+;
+identifier (3)
++
++
+;
+}
+write
+(
+identifier (0)
+)
+;
+END

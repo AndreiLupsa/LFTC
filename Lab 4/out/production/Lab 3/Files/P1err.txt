@@ -11,8 +11,9 @@ if(a > b){
 }
 else{
     max = b;
+    ~
 }
-if(c>max){
+if(2c > max){
     max = c;
 }
 

@@ -1,0 +1,62 @@
+START
+{
+}
+]
+[
+;
+.
+constant (0)
+Integer
+identifier (0)
+;
+Integer
+identifier (0)
+;
+Integer
+identifier (1)
+;
+Integer
+identifier (2)
+;
+Integer
+identifier (3)
+=
+constant (1)
+;
+Integer
+identifier (4)
+=
+identifier (5)
+;
+if
+(
+identifier (0)
+>
+identifier (1)
+)
+{
+identifier (3)
+=
+identifier (0)
+;
+}
+else
+{
+identifier (3)
+=
+identifier (1)
+;
+}
+if
+(
+identifier (2)
+>
+identifier (3)
+)
+{
+identifier (3)
+=
+identifier (2)
+;
+}
+END
